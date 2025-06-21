@@ -1,0 +1,298 @@
+html {
+    scroll-behavior: smooth;
+}
+/* Mobile phones */
+@media (max-width: 480px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+
+.navclass{
+    background-color:white;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+}
+
+.nameclass{
+    font-size: 50px;
+    font-weight:700;
+    padding: 20px;
+}
+
+.navlinksclass{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+}
+
+.navlinksclass a{
+    padding: 20px;
+    text-decoration: none;
+    font-size: 20px;  
+    color: var(--dark);  
+    margin-right: 50px;
+}
+
+.navlinksclass a:hover{
+    color:gray;
+    text-decoration: underline;
+}
+
+.homeclass{
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    padding-top: 60px;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.homecontentclass{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.homecontentclass h1{
+    margin-bottom:0.5rem;
+    font-size: 50px;
+}
+
+.homecontentclass p{
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.btnclass{
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: lightblue;
+    text-decoration: none;
+    width: 120px;
+    margin: 0 auto;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 800;
+    transition: background-color 0.3s ease;
+}
+
+.highlight{
+    color:mediumturquoise;
+}
+
+.btnclass:hover{
+    color: black;
+    background-color: lightgray
+}
+
+.aboutclass{
+    text-align: center;
+    background-color:white;
+    padding-top: 110px;
+    height:55vh;
+}
+
+.aboutcontentclass{
+    background-color:white;
+    display: flex;
+}
+
+.aboutdetailsclass{
+    background-color:white;
+    width: 80%;
+    text-align-last: center;
+    font-size: 22px;
+}
+
+.aboutskillsclass{
+    border-radius: 10px;
+    flex-direction: column;
+    width: 15%;
+    text-align: center;
+    padding-left: 0;
+    display: flex;
+    padding: 20px;
+    margin: 0;
+    background-color:#dbeafe;
+}
+
+.aboutskillsclass h3 {
+    color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.aboutskillsclass ul{
+    margin: 0 auto;
+    list-style-type:none;
+    gap: 12px;
+    font-size: 20px;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.codingprofilesclass{
+    
+    background: #eff6ff;
+    padding-top: 90px;
+    text-align: center;
+    height:58vh;
+}
+
+.container1{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    height: 60%;
+}
+
+.leetcodeclass{
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+}
+
+.leetcodeclass a{
+    text-decoration: none;
+    font-size: 26px;
+    margin-top: 800px;
+    color: var(--dark);
+    font-weight: 600;
+}
+.leetcodelogoclass{
+    width: 50%;
+    height: 70%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.leetcodelogoclass:hover{
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.hackerankclass{
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.hackerranklogoclass{
+    width: 50%;
+    height: 70%;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+}
+
+.hackerranklogoclass:hover{
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.codechefclass{
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+}
+
+.codecheflogoclass{
+    width: 50%;
+    height: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.codecheflogoclass:hover{
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.smartinterviewclass{
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+}
+
+.smartinterviewlogoclass{
+    width: 50%;
+    height: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.smartinterviewclass:hover{
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.contactinfo{
+    background:white;
+    padding-top:12vh ;
+    height: auto;
+    display: flex;
+}
+
+.contactdetails{
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    text-decoration: none;
+    flex-direction: column;
+}
+.contactdetails a{
+    text-decoration: none;
+    color: #000;
+}
+
+.contactdetails2{
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.maillink{
+    margin-left:11px;
+}
+
+.socialmedia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+.footercontent{
+    display: flex;
+    margin-top: 28px;
+    padding: 12px;
+    justify-content: center;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    box-sizing: content-box;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
