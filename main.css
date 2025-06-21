@@ -185,7 +185,7 @@ html {
     display: flex;
 }
 
-.leetcodelogoclass:hover{
+.leetcodeclass:hover{
     transform: scale(0.9);
     transition: transform 0.3s ease;
 }
@@ -205,7 +205,7 @@ html {
     display: flex;
 }
 
-.hackerranklogoclass:hover{
+.hackerankclass:hover{
     transform: scale(0.9);
     transition: transform 0.3s ease;
 }
@@ -224,7 +224,7 @@ html {
     justify-content: center;
 }
 
-.codecheflogoclass:hover{
+.codechefclass:hover{
     transform: scale(0.9);
     transition: transform 0.3s ease;
 }
