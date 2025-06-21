@@ -1,12 +1,38 @@
+:root {
+  --dark: #000;
+  --secondary: #4a90e2;
+}
 html {
     scroll-behavior: smooth;
 }
 /* Mobile phones */
 @media (max-width: 480px) {
   body {
-    background-color: lightgreen;
+    background-color:white;
   }
 }
+
+#mobile-warning {
+  display: none;
+  background-color: #ffdddd;
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: red;
+}
+
+@media (max-width: 768px) {
+  #mobile-warning {
+    display: block;
+  }
+
+  /* Optional: hide rest of content */
+  body > *:not(#mobile-warning) {
+    display: none;
+  }
+}
+
+
 
 
 .navclass{
@@ -16,6 +42,7 @@ html {
     display: flex;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     position: fixed;
+    flex-wrap: wrap ;
     width: 100%;
 }
 
@@ -29,10 +56,12 @@ html {
     list-style: none;
     text-decoration: none;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .navlinksclass a{
     padding: 20px;
+    flex-wrap: wrap;
     text-decoration: none;
     font-size: 20px;  
     color: var(--dark);  
@@ -58,7 +87,8 @@ html {
     flex-direction: column;
     text-align: center;
     padding: 20px;
-    max-width: 800px;
+    width: 100%;
+    flex-wrap: wrap;
     margin: 0 auto;
 }
 
@@ -103,16 +133,19 @@ html {
     background-color:white;
     padding-top: 110px;
     height:55vh;
+    flex-wrap: wrap;
 }
 
 .aboutcontentclass{
     background-color:white;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .aboutdetailsclass{
     background-color:white;
     width: 80%;
+    flex-wrap: wrap;
     text-align-last: center;
     font-size: 22px;
 }
@@ -121,6 +154,7 @@ html {
     border-radius: 10px;
     flex-direction: column;
     width: 15%;
+    flex-wrap: wrap;
     text-align: center;
     padding-left: 0;
     display: flex;
@@ -155,6 +189,9 @@ html {
     padding-top: 90px;
     text-align: center;
     height:58vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .container1{
@@ -253,12 +290,14 @@ html {
     padding-top:12vh ;
     height: auto;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .contactdetails{
     display: flex;
     margin: 0 auto;
     width: 100%;
+    flex-wrap: wrap;
     text-decoration: none;
     flex-direction: column;
 }
@@ -271,6 +310,7 @@ html {
     margin: 0 auto;
     display: flex;
     text-align: center;
+    flex-wrap: wrap;
     flex-direction: column;
 }
 
@@ -283,6 +323,7 @@ html {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    flex-wrap: wrap;
     font-size: 32px;
     margin-top: 20px;
 }
@@ -290,6 +331,7 @@ html {
 .footercontent{
     display: flex;
     margin-top: 28px;
+    flex-wrap: wrap;
     padding: 12px;
     justify-content: center;
     background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
