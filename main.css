@@ -2,24 +2,40 @@
 html {
   scroll-behavior: smooth;
 }
-.navclass {
-  background-color: white;
-  justify-content: space-between;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  position:fixed;
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
+  z-index: 1000; 
+  background-color: white;  
+  height: 100px;   
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+body {
+  padding-top: 120px; 
+}
+
+.navclass {
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  height: auto;
+  width: 100%;
+} 
 .nameclass {
   font-size: 50px;
   font-weight: 700;
-  padding: 20px;
 }
 
 .navlinksclass {
-  list-style: none;
-  padding-bottom: 30px;
+  list-style: none; 
   text-decoration: none;
   display: flex;
   gap: 25px;
@@ -27,7 +43,6 @@ html {
 }
 
 .navlinksclass a {
-  padding-bottom: 30px;
   gap: 10px;
   text-decoration: none;
   font-size: 20px;
@@ -97,9 +112,10 @@ html {
 
 .aboutclass {
   text-align: center;
+  padding-bottom: 10px;
   background-color: white;
-  padding-top: 110px;
-  height: 55vh;
+  padding-top: 80px;
+  height: auto;
   flex-wrap:nowrap;
 }
 
@@ -150,7 +166,7 @@ html {
 .codingprofilesclass {
   background: #eff6ff;
   padding-top: 35px;
-  margin-top: 20% ;
+  margin-top: 50px;
   justify-content: center;
   align-items: center;
   padding-top: 20px;
@@ -338,12 +354,11 @@ html {
 
 .darkmode-btn {
   background-color: #f0f9ff;
-  padding: 10px 14px;
+  padding: 10px 14px  ;
   font-weight: bold;
   border: none;
   cursor: pointer;
   border-radius: 8px;
-  margin-right: 5px;
 }
 
 .darkmode-btn:hover {
